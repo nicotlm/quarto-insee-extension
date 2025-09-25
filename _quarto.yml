@@ -45,6 +45,8 @@ from: markdown+emoji
 
 link-external-newwindow: true
 # link-external-icon: true
+# footnotes-hover: true
+# reference-location: document #block / section / margin / document
 
 code-fold: true
 code-summary: "Code"
