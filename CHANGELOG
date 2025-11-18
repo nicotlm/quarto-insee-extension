@@ -1,30 +1,23 @@
 ## :one: Actualités
 
-**V1 - Nouvelle présentation quarto avec nouvelle charte graphique**
-
-Le 3 septembre 2025, la nouvelle identité visuelle de l'Insee et des services statistiques ministériels a été révélée. 
-Outre un changement de logo, c'est toute la charte graphique Insee et SSM qui a été revue et l'ancienne présentation quarto devenait obsolète.   
-
-Dès le mois d'août 2025, des contacts avec le Pôle Communication de la direction régionale de Normandie ont permis de construire
- ce nouveau support, intégrant les principaux éléments de la nouvelle charte.    
- Nous tenons à remercier chaleureusement le Pôle Communication pour leur précieux soutien et leur expertise dans la réalisation de ce projet.    
+Nous tenons encore à remercier chaleureusement le Pôle Communication pour leur précieux soutien et l'apport des principaux éléments composant la nouvelle charte graphique de l'Insee.    
  
-     
+
+### **V1 - Nouveau support disponible au format ODT**
+
 **Principales nouveautés :**    
 
-- **Sommaire:** Transformation de la table des matières en colonne.
-- **Conformité:** Intégration des éléments principaux selon la [charte éditoriale 2024](https://intranet.insee.fr/jcms/39120610_DBFileDocument/fr/insee-charte-graphique-editoriale-2024).
-- **Couleurs:** Utilisation exclusive des couleurs de la nouvelle charte graphique, assurant une conformité totale.
-- **Exemples:** Slides illustratives pour les éléments inchangés.
-- **Plugins:** Intégration du plugin *"multimodal"* pour simplifier l'utilisation des popups dans le support.
-- La mise à disposition des logos des différents SSM
-
-Si des éléments sont demeurés inchangés alors ils ont été conservés et des slides _exemples_ vous permettent d'illustrer ce qu'il est possible de faire
-
+- **Sommaire:** Prise en compte de la possibilité de ne pas numéroter une slide de niveau 1 (utilisation de la classe `.unnumbered`). Le chapitre n'apparaît plus dans le sommaire. 
+- **Conformité:** Mise à jour des fonds de slide avec modification des couleurs pour améliorer les contrastes. (nouvelle charte graphique)
+- **Plugins:** Suppression de l'extension roughnotation (pas très utile ni fonctionnelle)
+- **Refactoring:** Changement d'architecture des configurations du projet pour prise en compte de supports multiples.
+  - transferts de configurations du fichier `_quarto.yml` vers le fichier `_extension.yml`
+  - restructuration des ressources avec changement de path pour une meilleure séparation entre les supports
+- Ajout d'un {+nouveau format d'export+} avec l'intégration d'un output libreOffice en ODT :arrow_right: Cf. le fichier `template_writer.qmd`. 
 
 ## :two: À venir
 
-- La génération de supports Impress et ODT est en cours de développement et sera intégrée dans les prochaines versions.
+- La génération de supports Impress ou PDF (éventuellement)
 - Un thème sombre (éventuellement)
 
  **Pour en savoir plus sur le détail des modifications, consultez la partie [releases](https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto/-/releases)**

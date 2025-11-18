@@ -250,6 +250,10 @@ div.backgroundTitre_bleu, div.backgroundTitre_violet, div.backgroundTitre_jaune,
   background-repeat: no-repeat;
 }
 
+section.backgroundTitre_bleu h1 span.header-section-number, section.backgroundTitre_bleu h1 span.title-text{
+  color: #0F417A !important; 
+}
+
 section.backgroundTitre_violet h1 span.header-section-number, section.backgroundTitre_violet h1 span.title-text{
   color: #5F1972 !important; 
 }
@@ -293,6 +297,12 @@ section.backgroundTitre_vert h1 span.header-section-number, section.backgroundTi
   }
 }
 
+
+h1:not(.title):not(:has(span)) {
+  font-size: 3em !important;
+  top: 2em;
+  position: relative;
+}
 
 .logoTopRightTitre{
   width: 20%;

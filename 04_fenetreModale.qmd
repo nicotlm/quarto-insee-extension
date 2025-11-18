@@ -9,8 +9,8 @@ utilisation d'une fenêtre modale
 - Utilisation du plugin multimodal dont la documentation est accessible sur [le dépôt GitHub](https://github.com/martinomagnifico/quarto-multimodal){target="_blank"}
 
 - Les fenêtres modales peuvent être utilisées pour :
-  * montrer [une image](#){data-modal-type="image" data-modal-url="img/Logo_Insee_SignatureAdroite.jpg"}
-  * montrer [une image (code différent)](img/Logo_Insee_SignatureAdroite.jpg){data-modal-type="image"}
+  * montrer [une image](#){data-modal-type="image" data-modal-url="_extensions/insee-clair/ressources/divers/Logo_Insee_SignatureAdroite.jpg"}
+  * montrer [une image (code différent)](_extensions/insee-clair/ressources/divers/Logo_Insee_SignatureAdroite.jpg){data-modal-type="image"}
   * montrer [une video stockée dans le projet](#){data-modal-type="video" data-modal-url="videos/presentation_nouveauLogo.mp4"}
   * intégration d'une [video hébergée sur youtube dans une fenêtre modale](#){data-modal-type="html" data-modal-padding="1em" data-modal-class="taille_iframe" data-modal-url="#somehiddendiv_2"}
   * afficher du [contenu HTML](#){data-modal-type="html" data-modal-url="#somehiddendiv"}
@@ -48,10 +48,10 @@ utilisation d'une fenêtre modale
 - `data-modal-padding` : ajoute un écart entre la bordure de la popup et l'image, la vidéo ou le texte présent dans la popup.
 - `data-modal-class` : permet d'ajouter une classe (ou plusieurs en les séparant par un espace ou une virgule) CSS à la fenêtre modale
 
-[Exemple :]{.souligneRouge} [Show modal](#){data-modal-type="image" data-modal-url="img/Logo_Insee_SignatureAdroite.jpg" data-modal-overlaycolor="#CA987F" data-modal-background="gray" data-modal-padding="2em" data-modal-class="bordureRouge"}
+[Exemple :]{.souligneRouge} [Show modal](#){data-modal-type="image" data-modal-url="_extensions/insee-clair/ressources/divers/Logo_Insee_SignatureAdroite.jpg" data-modal-overlaycolor="#CA987F" data-modal-background="gray" data-modal-padding="2em" data-modal-class="bordureRouge"}
 
 :::{.example .tiny}
-[![](img/Logo_Insee_SignatureAdroite.jpg)](#){.play_icone data-modal-type="video" data-modal-url="videos/presentation_nouveauLogo.mp4"}
+[![](_extensions/insee-clair/ressources/divers/Logo_Insee_SignatureAdroite.jpg)](#){.play_icone data-modal-type="video" data-modal-url="videos/presentation_nouveauLogo.mp4"}
 :::
 
 ::::

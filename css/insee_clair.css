@@ -2,7 +2,7 @@
 
 /*Sommaire*/
 #custom-toc-slide {
-  background-image: url(../_extensions/insee-clair/ressources/3_Template-INSEE-Clair_Page-blanche.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche.svg);
 }
 
 
@@ -13,7 +13,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-1.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -25,7 +25,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-2.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-2.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -37,7 +37,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-3.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-3.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -49,7 +49,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-4.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-4.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -61,7 +61,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-5.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-5.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -73,7 +73,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-6.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-6.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -85,7 +85,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-7.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-7.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -97,7 +97,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-8.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-8.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -109,7 +109,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-9.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-9.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -121,7 +121,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-10.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-10.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -133,7 +133,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-11.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-11.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -145,7 +145,7 @@
   top: 0;
   width: 70px;
   height: 100px;
-  background-image: url(../_extensions/insee-clair/ressources/elements_sommaire/Element-sommaire-12.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/elements_sommaire/Element-sommaire-12.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -153,50 +153,50 @@
 
 /*pages Titre*/
 div.backgroundTitre_bleu{
-  background-image: url(../_extensions/insee-clair/ressources/2_Template-INSEE-Clair_Intercalaire1.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire1.svg);
 }
 
 div.backgroundTitre_violet{
-  background-image: url(../_extensions/insee-clair/ressources/2_Template-INSEE-Clair_Intercalaire2.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire2.svg);
 }
 
 div.backgroundTitre_jaune{
-  background-image: url(../_extensions/insee-clair/ressources/2_Template-INSEE-Clair_Intercalaire3.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire3.svg);
 }
 
 div.backgroundTitre_vert{
-  background-image: url(../_extensions/insee-clair/ressources/2_Template-INSEE-Clair_Intercalaire4.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire4.svg);
 }
 
 
 /*Pages standard*/
 div.backgroundStandard {
-  background-image: url(../_extensions/insee-clair/ressources/3_Template-INSEE-Clair_Page-blanche.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche.svg);
 }
 
 div.backgroundStandard_bleu {
-  background-image: url(../_extensions/insee-clair/ressources/3_Template-INSEE-Clair_Page-blanche-cercle1.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche-cercle1.svg);
 }
 
 div.backgroundStandard_violet {
-  background-image: url(../_extensions/insee-clair/ressources/3_Template-INSEE-Clair_Page-blanche-cercle2.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche-cercle2.svg);
 }
 
 div.backgroundStandard_jaune {
-  background-image: url(../_extensions/insee-clair/ressources/3_Template-INSEE-Clair_Page-blanche-cercle3.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche-cercle3.svg);
 }
 
 div.backgroundStandard_vert {
-  background-image: url(../_extensions/insee-clair/ressources/3_Template-INSEE-Clair_Page-blanche-cercle4.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche-cercle4.svg);
 }
 
 div.backgroundStandard_multi {
-  background-image: url(../_extensions/insee-clair/ressources/3_Template-INSEE-Clair_Page-blanche-cercle5.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche-cercle5.svg);
 }
 
 /*Page finale*/
 div.backgroundPageFinale {
-  background-image: url(../_extensions/insee-clair/ressources/6_Template-INSEE-Clair_Diapo-finale.svg);
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/6_Template-INSEE-Clair_Diapo-finale.svg);
 }
 
 

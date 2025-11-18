@@ -13,17 +13,12 @@ chalkboard: false # press the B key to toggle chalkboard
 jump-to-slide: true #press "g" to jump and the number of slide
 mouse-wheel: false
 transition: slide
-fig-cap-location: bottom
+# multiplex: true
 
 embed-resources: false
 
 custom-toc: true
 
-# multiplex: true
-execute:
-  echo: false
-  warning: false
-  cache: false
 editor:
   render-on-save: true
 

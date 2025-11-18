@@ -19,9 +19,9 @@ Par défaut, la présentation est "branchée" sur la charte graphique du thème 
 
 :arrow_right: Les images des licences, des logos de chaque région et de chaque SSM, et les pictogrammes Insee sont disponibles dans le dossier `img/`.
 
-Pour changer de thème, vous devez sélectionner le render associé au thème de la charte graphique de l'Insee que vous souhaitez utiliser, comme le montre l'image suivante : 
+Pour changer de format, vous devez sélectionner le render associé au thème de la charte graphique de l'Insee que vous souhaitez utiliser, comme le montre l'image suivante : 
 
-![](img/renders_quarto.png)
+![](_extensions/insee-clair/ressources/divers/renders_quarto.png)
 
 > Si ces options ne sont pas disponibles et que le render ne produit qu'un fichier texte, sans style, alors il vous faudra monter de version votre RStudio. L'intégration de quarto dans RStudio se fait à partir de la version `v2022.07` de RStudio. De plus, il est {-fortement recommandé-} d'utiliser a minima la version `v2023.06` de Rstudio pour faire du quarto.
 
@@ -93,7 +93,7 @@ La branche déployée sur gitlab est définie dans le fichier `.gitlab-ci.yml` d
 
 - RStudio plante si vous essayez de changer de projet R ou de quitter RStudio alors que le render est encore en cours d'exécution (onglet {+ Background Jobs +} de RStudio). Pensez à stopper le processus avant de changer de projet R ou de quitter RStudio (bouton Stop).
 
-![](img/background_jobs_rstudio.png)
+![](_extensions/insee-clair/ressources/divers/background_jobs_rstudio.png)
 
 - Ce projet fonctionne désormais sur AUS. Cependant, il subsiste un problème de "Render" lorsqu'on utilise les fonctionnalités suivantes :
   - mathJax pour les équations mathématiques

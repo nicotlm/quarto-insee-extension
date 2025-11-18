@@ -13,5 +13,6 @@
 *.sty
 *.docx
 *.odt
+!_extensions/insee-clair/ressources/*.odt
 _output/
 !modulesCompl/*

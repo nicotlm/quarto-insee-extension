@@ -42,11 +42,8 @@ documentation
 - **Verticator :**
   - [exemple](https://martinomagnifico.github.io/reveal.js-verticator/demo.html#/)
   - [code de l'exemple](https://github.com/Martinomagnifico/quarto-verticator/blob/main/example.qmd)
-- **roughtnotation :**
-  - [exemple](https://emilhvitfeldt.github.io/quarto-roughnotation/#/title-slide) 
-  - [code de l'exemple](https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd)
 - **fontawesome :**
-  - [liste des icones](https://fontawesome.com/search?o=r&m=free)
+  - [liste des icônes](https://fontawesome.com/search?o=r&m=free)
     - [**Exemple :**]{.souligneRouge} {{< fa icons >}} (sans titre) ; {{< fa envelope title="Une envelope" >}} (avec titre)
 - **[Emoji](https://emojibase.dev/shortcodes/?) :** prendre le texte de la colonne "Github"
 
