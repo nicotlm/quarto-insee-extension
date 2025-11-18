@@ -1,3 +1,4 @@
+
 function Pandoc(doc)
   -- Vérifie si custom-toc est activé
   local custom_toc_enabled = doc.meta and doc.meta["custom-toc"] == true
@@ -26,9 +27,22 @@ function Pandoc(doc)
   -- Génère la numérotation et les cartes
   local sections = {}
   local counters = {0}  -- Compteur pour chaque niveau (1-based)
-
   for i, block in ipairs(doc.blocks) do
     if block.t == "Header" and block.level <= toc_depth then
+      -- Vérifie si le titre est marqué comme "unnumbered"
+      local is_unnumbered = false
+      for _, class in ipairs(block.classes) do
+        if class == "unnumbered" then
+          is_unnumbered = true
+          break
+        end
+      end
+
+      -- Si le titre est "unnumbered", on l'ignore pour le sommaire
+      if is_unnumbered then
+        goto continue
+      end
+
       -- Met à jour les compteurs
       while #counters < block.level do
         table.insert(counters, 0)
@@ -44,7 +58,6 @@ function Pandoc(doc)
         table.insert(number_parts, format_number(counters[k]))
       end
       local section_number = table.concat(number_parts, ".")
-
       table.insert(sections, {
         id = block.identifier,
         title = pandoc.utils.stringify(block.content),
@@ -53,6 +66,7 @@ function Pandoc(doc)
         level1_number = format_number(counters[1])  -- Numéro de niveau 1
       })
     end
+    ::continue::
   end
 
   -- Génère les cartes avec classe CSS pour le numéro de niveau 1
