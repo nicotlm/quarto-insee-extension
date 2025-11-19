@@ -30,6 +30,7 @@ contributes:
       code-fold: true
       code-summary: "Code"
       code-copy: true
+      code-annotations: hover #below / hover / select
       highlight-style: atom-one
       
       menu: {
