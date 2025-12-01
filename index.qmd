@@ -114,15 +114,22 @@ Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher qu
 
 :::: {.columns .coordonneesFinales}
 
-::: {.column .coordonnees width=50%}
+::: {.column .gauche .coordonnees width=30%}
 - Prénom Nom
 - fonction
-- Service
-- Numéro de téléphone
-- Mél
+- [Service]{.ligneBlancheApres}
+- [Direction]{.ligneBlancheApres}
+- prenom.nom@insee.fr
+- T: 00 00 00 00 00  M: 00 00 00 00 00
 :::
 
-::: {.column .droite width=40%}
+::: {.column .coordonnees .milieu width=30%}
+
+:::
+
+
+::: {.column .coordonnees  .droite width=30%}
+
 :::
 
 ::::

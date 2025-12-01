@@ -4,6 +4,12 @@ function Pandoc(doc)
   local custom_toc_enabled = doc.meta and doc.meta["custom-toc"] == true
   if not custom_toc_enabled then return doc end
 
+  -- Récupère toc-title
+  local toc_title = ""  -- Valeur par défaut
+  if doc.meta and doc.meta["toc-title"] then
+    toc_title = pandoc.utils.stringify(doc.meta["toc-title"])
+  end
+
   -- Récupère toc-depth (par défaut: 1)
   local toc_depth = 1
   if doc.meta and doc.meta["toc-depth"] then
@@ -85,6 +91,12 @@ function Pandoc(doc)
   -- Lit les templates
   local html_template = read_file("_extensions/insee-clair/toc-slide.html")
   local css_content = read_file("_extensions/insee-clair/toc-style.html")
+  
+  -- Remplace le titre du sommaire dans le template
+  html_template = html_template:gsub(
+    '<h2>.-</h2>',  -- Cherche n'importe quel titre <h2>...</h2>
+    '<h2>' .. toc_title .. '</h2>'  -- Remplace par le titre dynamique
+  )
 
   -- Insère les cartes dans le template
   local final_html = html_template:gsub(
