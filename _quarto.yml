@@ -3,7 +3,7 @@ project:
   title: "Présentation quarto-Insee"
   output-dir: _output
   render:
-    - "*.qmd"
+    - "template.qmd"
 
 format:
   insee-clair-revealjs: default

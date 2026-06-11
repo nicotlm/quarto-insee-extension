@@ -15,3 +15,5 @@
 
 _output/
 !modulesCompl/*
+
+**/*.quarto_ipynb
