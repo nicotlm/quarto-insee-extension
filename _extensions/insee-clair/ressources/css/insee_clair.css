@@ -162,10 +162,7 @@ div.backgroundStandard_multi {
   background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle5.svg);
 }
 
-/*Page finale*/
-div.backgroundPageFinale {
-  background-image: url(../revealJs/6_Template-INSEE-Clair_Diapo-finale.svg);
-}
+/*Page finale - background set in lua filter*/
 
 /* Footer characteristics and only for the first slide */
 .reveal .footer .footer-logo {
