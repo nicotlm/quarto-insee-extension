@@ -1,8 +1,6 @@
 /*Sommaire*/
 
 #TOC {
-  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche.svg);
-  background-size: cover; /* see note below if it doesn't fill */
   text-align: left; /* "Sommaire" heading top-left, like the target */
 }
 
