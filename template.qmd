@@ -12,7 +12,7 @@ eval: false
 # Titre de niveau 1
 
 :::{.logoTopRightTitre}
-![](logo_Auvergne.jpg)
+![](_extensions/insee-clair/ressources/img/logo_Regions/LOGOS_AUVERGNE-RHONE-ALPES_SIGNATURE_CMJN.jpg)
 :::
 
 ## Titre de niveau 2 {.backgroundStandard_bleu}
@@ -22,7 +22,7 @@ titre de niveau 1
 :::
 
 :::{.logoTopLeftStandard}
-![](logo_Auvergne.jpg)
+![](_extensions/insee-clair/ressources/img/logo_Regions/LOGOS_AUVERGNE-RHONE-ALPES_SIGNATURE_CMJN.jpg)
 :::
 
 
