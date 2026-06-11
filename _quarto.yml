@@ -2,24 +2,11 @@ project:
   type: default
   title: "Présentation quarto-Insee"
   output-dir: _output
-  resources:
-    - "_extensions/"
-    - "css/"
-    - "data/"
-    - "img/"
-    - "videos/"
-    - "js/"
-    - "R/"
-    - "modulesCompl/"
-    - "*.html"
-    - "*_files/"
   render:
     - "*.qmd"
-    - "!R/data.qmd"
 
 format:
   insee-clair-revealjs: default
-  insee-clair-odt: default
 
 fig-cap-location: bottom
 
