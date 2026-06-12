@@ -200,3 +200,8 @@ div.backgroundStandard_multi {
 .reveal .footer .footer-logo-inseefr {
   height: 18px;
 }
+
+/* Export to pdf : don't show footer - never */
+html.print-pdf .reveal .footer {
+  display: none !important;
+}
