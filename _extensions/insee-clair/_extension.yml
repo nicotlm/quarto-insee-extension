@@ -7,9 +7,9 @@ contributes:
     revealjs:
       header-includes: |
         <link rel="icon" type="image/png" sizes="32x32"
-          href="_extensions/insee-clair/ressources/revealJs/insee_embleme_couleurs_RVB.svg">
+          href="_extensions/nicotlm/insee-clair/ressources/revealJs/insee_embleme_couleurs_RVB.svg">
 
-      logo: _extensions/insee-clair/ressources/img/licences/cc/png/by-sa.png #uncomment here to add license logo for instance or comment to hide it
+      logo: _extensions/nicotlm/insee-clair/ressources/img/licences/cc/png/by-sa.png #uncomment here to add license logo for instance or comment to hide it
       view-distance: 100 # keep all slides rendered → counter sees them all when rendering title slides
       mobile-view-distance: 100
       embed-resources: true
