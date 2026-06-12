@@ -543,14 +543,6 @@ summary {
   left: 7% !important;
 }
 
-.pdf-page > div.backgroundPageFinale {
-  position: relative !important;
-}
-
-html.print-pdf div#footerPersonnalise {
-  visibility: hidden;
-}
-
 .pdf-page p.date {
   top: 35em;
 }
@@ -574,12 +566,6 @@ html.print-pdf div#footerPersonnalise {
     margin-top: 6%;
   }
 
-  [id^="chapters_"] {
-    top: 7em !important;
-    left: 2em;
-    position: relative !important;
-  }
-
   #pageDeFin {
     position: relative !important;
     top: -28em !important;
@@ -589,7 +575,7 @@ html.print-pdf div#footerPersonnalise {
     display: contents !important;
   }
 
-  .no-print-pdf {
+  .reveal .footer {
     display: none !important;
   }
 }
