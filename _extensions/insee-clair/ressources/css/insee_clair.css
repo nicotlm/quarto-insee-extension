@@ -166,7 +166,7 @@ div.backgroundStandard_multi {
 
 /* Footer characteristics and only for the first slide */
 .reveal .footer .footer-logo {
-  height: 45px;
+  height: 35px;
   margin: 0 5px;
   vertical-align: middle;
   display: inline-block;
@@ -198,5 +198,5 @@ div.backgroundStandard_multi {
 
 /* size of insee.fr */
 .reveal .footer .footer-logo-inseefr {
-  height: 20px;
+  height: 18px;
 }
