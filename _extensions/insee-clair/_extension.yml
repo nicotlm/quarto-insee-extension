@@ -89,7 +89,7 @@ contributes:
       css: [ressources/css/insee_clair.css, ressources/css/default.css]
 
       title-slide-attributes:
-        data-background-image: _extensions/insee-clair/ressources/revealJs/1_Template-INSEE-Clair_premiere-page.svg
+        data-background-image: _extensions/nicotlm/insee-clair/ressources/revealJs/1_Template-INSEE-Clair_premiere-page.svg
         data-background-size: contain
         data-background-opacity: "1"
 
@@ -97,13 +97,13 @@ contributes:
       toc-title: Sommaire
       toc-depth: 1
       footer: |
-        <a href="https://www.insee.fr/fr/accueil" target="_blank"><img class="footer-logo footer-logo-inseefr" src="_extensions/insee-clair/ressources/img/logos/svg/1_inseeFR_Noir.svg" alt="Insee.fr"></a>
-        <a href="https://bsky.app/profile/insee.fr" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/svg/logo_bluesky.svg" alt="Bluesky"></a>
-        <a href="https://www.instagram.com/insee_fr/" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/svg/logo_instagram.svg" alt="Instagram"></a>
-        <a href="https://www.linkedin.com/company/insee" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/svg/logoLinkedIn_rond.svg" alt="LinkedIn"></a>
-        <a href="https://x.com/InseeFr" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/svg/logo_X.svg" alt="X"></a>
-        <a href="https://www.youtube.com/channel/UChCCvJTbZEYsCXyfu27eQ6g" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/svg/logoYoutube_rond.svg" alt="YouTube"></a>
-        <a href="https://blog.insee.fr/" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/svg/logo_blog.svg" alt="Blog"></a>
-        <a href="https://www.insee.fr/fr/information/2381941" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/svg/flux_rss.svg" alt="RSS"></a>
+        <a href="https://www.insee.fr/fr/accueil" target="_blank"><img class="footer-logo footer-logo-inseefr" src="_extensions/nicotlm/insee-clair/ressources/img/logos/svg/1_inseeFR_Noir.svg" alt="Insee.fr"></a>
+        <a href="https://bsky.app/profile/insee.fr" target="_blank"><img class="footer-logo" src="_extensions/nicotlm/insee-clair/ressources/img/logos/svg/logo_bluesky.svg" alt="Bluesky"></a>
+        <a href="https://www.instagram.com/insee_fr/" target="_blank"><img class="footer-logo" src="_extensions/nicotlm/insee-clair/ressources/img/logos/svg/logo_instagram.svg" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/insee" target="_blank"><img class="footer-logo" src="_extensions/nicotlm/insee-clair/ressources/img/logos/svg/logoLinkedIn_rond.svg" alt="LinkedIn"></a>
+        <a href="https://x.com/InseeFr" target="_blank"><img class="footer-logo" src="_extensions/nicotlm/insee-clair/ressources/img/logos/svg/logo_X.svg" alt="X"></a>
+        <a href="https://www.youtube.com/channel/UChCCvJTbZEYsCXyfu27eQ6g" target="_blank"><img class="footer-logo" src="_extensions/nicotlm/insee-clair/ressources/img/logos/svg/logoYoutube_rond.svg" alt="YouTube"></a>
+        <a href="https://blog.insee.fr/" target="_blank"><img class="footer-logo" src="_extensions/nicotlm/insee-clair/ressources/img/logos/svg/logo_blog.svg" alt="Blog"></a>
+        <a href="https://www.insee.fr/fr/information/2381941" target="_blank"><img class="footer-logo" src="_extensions/nicotlm/insee-clair/ressources/img/logos/svg/flux_rss.svg" alt="RSS"></a>
       filters:
         - slide-background.lua
