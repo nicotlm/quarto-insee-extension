@@ -172,7 +172,7 @@ div.backgroundStandard_multi {
   display: inline-block;
 }
 
-/* footer visible only on the title slide */
+/* footer visible only on the title and pagedeFin slides */
 .reveal .footer {
   visibility: hidden;
 }
@@ -180,11 +180,19 @@ div.backgroundStandard_multi {
   visibility: visible;
 }
 
-/* logo visible only on the title slide */
+.reveal:has(#pageDeFin.present) .footer {
+  visibility: visible;
+}
+
+/* logo visible only on the title and pagedeFin slides */
 .reveal .slide-logo {
   visibility: hidden;
 }
 .reveal:has(#title-slide.present) .slide-logo {
+  visibility: visible;
+}
+
+.reveal:has(#pageDeFin.present) .slide-logo {
   visibility: visible;
 }
 
