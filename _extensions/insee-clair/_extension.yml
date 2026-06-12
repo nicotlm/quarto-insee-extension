@@ -34,8 +34,6 @@ contributes:
       code-copy: true
       code-annotations: hover #below / hover / select
       highlight-style: atom-one
-      format-resources: # files in the extension to be copied in the rendering output - other than CSS and the one automatically detected by Quarto
-        - ressources/revealJs/customMenu.html
       menu:
         side: "left"
         width: "wide"
