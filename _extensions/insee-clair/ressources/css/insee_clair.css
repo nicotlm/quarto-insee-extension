@@ -137,6 +137,7 @@ section.sectionColor4 h1 {
 }
 
 /*Pages standard*/
+
 .reveal .slide-background-content {
   background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche.svg);
   background-size: 100% 100%;
@@ -166,4 +167,33 @@ div.backgroundStandard_multi {
 /*Page finale*/
 div.backgroundPageFinale {
   background-image: url(../revealJs/6_Template-INSEE-Clair_Diapo-finale.svg);
+}
+
+/* Footer characteristics and only for the first slide */
+.reveal .footer .footer-logo {
+  height: 30px;
+  margin: 0 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* footer visible only on the title slide */
+.reveal .footer {
+  visibility: hidden;
+}
+.reveal:has(#title-slide.present) .footer {
+  visibility: visible;
+}
+
+/* logo visible only on the title slide */
+.reveal .slide-logo {
+  visibility: hidden;
+}
+.reveal:has(#title-slide.present) .slide-logo {
+  visibility: visible;
+}
+
+/* size of insee.fr */
+.reveal .footer .footer-logo-inseefr {
+  height: 16px;
 }
