@@ -1,6 +1,6 @@
 /*-- scss:defaults --*/
 
-$font-family-sans-serif: "Open Sans", "Arial", "Helvetica" ;
+$font-family-sans-serif: "Open Sans", "Arial", "Helvetica";
 $presentation-heading-font: $font-family-sans-serif;
 $presentation-heading-color: #383d3d !default;
 $h1-font-size: 2em;
@@ -10,56 +10,54 @@ $h4-font-size: 0.9em;
 $h5-font-size: 0.6em;
 $h6-font-size: 0.5em;
 
-
 // colors
 $body-bg: #f0f1eb !default;
 $body-color: #000 !default;
-$link-color:  #3ea0e5 !default;
+$link-color: #3ea0e5 !default;
 $selection-bg: #26351c !default;
 $navigation-tools-color: #3ea0e5 !default;
-$main-color-text: #0F417A !default;
-$second-color-text: #5B8ED4 !default;
+$main-color-text: #0f417a !default;
+$second-color-text: #5b8ed4 !default;
 $yellow-color: #ffda5a !default;
 $grey-color-endPage: #646363 !default;
-$color-text-menu: #bebebe !default ;
+$color-text-menu: #bebebe !default;
 
 /*-- scss:rules --*/
 
 /**************GENERIQUE*******************/
 
-h1{
+h1 {
   font-size: $h1-font-size;
 }
 
-.level2{
-  h2{
-  font-size: $h2-font-size ;
-/*  padding-top: 1%;*/
-}
+.level2 {
+  h2 {
+    font-size: $h2-font-size;
+    /*  padding-top: 1%;*/
+  }
 
-  h3{
+  h3 {
     font-size: $h3-font-size;
     font-weight: normal;
-    border-left: solid 5px #268DFF;
+    border-left: solid 5px #268dff;
     padding-left: 40px;
   }
-  
-  h4{
+
+  h4 {
     font-size: $h4-font-size;
     font-weight: normal;
-    border-left: solid 5px #9827B5;
+    border-left: solid 5px #9827b5;
     padding-left: 40px;
   }
-  
-  h5{
+
+  h5 {
     font-size: $h5-font-size;
   }
-  
-  h6{
+
+  h6 {
     font-size: $h6-font-size;
   }
 }
-
 
 li {
   font-family: $font-family-sans-serif;
@@ -71,7 +69,9 @@ p {
 }
 
 .reveal {
-  .controls, .progress, .verticator {
+  .controls,
+  .progress,
+  .verticator {
     color: $navigation-tools-color;
   }
   a {
@@ -85,8 +85,11 @@ p {
   a:active {
     color: blueviolet;
   }
-  h1, h4, h5, h6 {
-  color: $main-color-text;
+  h1,
+  h4,
+  h5,
+  h6 {
+    color: $main-color-text;
   }
   h2 {
     color: $body-color;
@@ -99,42 +102,48 @@ p {
   }
 }
 
-.slide-number{
-  top: 2%; 
+.slide-number {
+  top: 2%;
   height: fit-content;
   color: $body-color !important;
   font-weight: bold;
   font-size: 20px;
 }
 
-.level2{
+.level2 {
   ul {
-    li {//liste de niveau 1
+    li {
+      //liste de niveau 1
       list-style-type: "– ";
       font-size: 1em !important;
     }
     ul {
-      li {//liste de niveau 2
+      li {
+        //liste de niveau 2
         list-style-type: disc;
         font-size: 0.9em !important;
       }
       ul {
-        li {//liste de niveau 3
+        li {
+          //liste de niveau 3
           list-style-type: "– ";
           font-size: 0.8em !important;
         }
-        ul{
-          li{//liste de niveau 4
+        ul {
+          li {
+            //liste de niveau 4
             list-style-type: disc;
             font-size: 0.9em !important;
           }
-          ul{
-            li{//liste de niveau 5
+          ul {
+            li {
+              //liste de niveau 5
               list-style-type: disc;
               font-size: 0.9em !important;
             }
-            ul{
-              li{//liste de niveau 6
+            ul {
+              li {
+                //liste de niveau 6
                 list-style-type: disc;
                 font-size: 1em !important;
               }
@@ -143,13 +152,12 @@ p {
         }
       }
     }
-  }  
+  }
 }
-
 
 /***********premiere page**********/
 
-p.date{
+p.date {
   font-size: 65%;
   text-align: left;
   position: absolute;
@@ -162,10 +170,10 @@ p.date{
   font-style: normal;
   font-weight: normal;
   text-align: left;
-/*  font-size: 1.5em;*/
+  /*  font-size: 1.5em;*/
 }
 
-#title-slide{
+#title-slide {
   hyphens: auto;
   width: 100%;
   height: 100%;
@@ -187,27 +195,26 @@ p.date{
   color: $second-color-text;
 }
 
-.slide-logo{
+.slide-logo {
   max-height: 20% !important;
   right: 5% !important;
   bottom: -10px !important;
 }
 
-.quarto-title-authors{
+.quarto-title-authors {
   position: relative;
   left: -0.5em;
   justify-content: left !important;
 }
 
-.quarto-title-author{
+.quarto-title-author {
   color: $main-color-text;
 }
 
-.quarto-title-affiliation{
+.quarto-title-affiliation {
   text-align: left;
-  color: $main-color-text;  
+  color: $main-color-text;
 }
-
 
 /***********Page Sommaire ************/
 
@@ -217,14 +224,14 @@ p.date{
   background-size: 100% 100%;
 }
 
-#custom-toc-slide h2{
+#custom-toc-slide h2 {
   color: $body-color;
   margin-top: 1%;
   text-align: left;
   padding-left: 8%;
 }
 
-.card-number{
+.card-number {
   text-align: left;
   padding-left: 20%;
   font-size: 235% !important;
@@ -235,60 +242,50 @@ p.date{
   margin-bottom: 5px;
 }
 
-.card-title{
+.card-title {
   text-align: left;
   font-size: xx-large;
 }
 
-
 /***********Page Titre ************/
 
-div.backgroundTitre_bleu, div.backgroundTitre_violet, div.backgroundTitre_jaune, div.backgroundTitre_vert{
-  max-width: 100%;
-  height: auto;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+/* Section-divider number: robust zero-padded counter (01, 02 … 10, 11, 12 …).
+   counter-reset must sit on the slides container; counter-increment on each
+   NUMBERED level-1 section so the count stays in step with Quarto's numbering. */
+.reveal .slides {
+  counter-reset: sectionTitre;
 }
-
-section.backgroundTitre_bleu h1 span.header-section-number, section.backgroundTitre_bleu h1 span.title-text{
-  color: #0F417A !important; 
+.reveal section.level1:not(.unnumbered) {
+  counter-increment: sectionTitre;
 }
-
-section.backgroundTitre_violet h1 span.header-section-number, section.backgroundTitre_violet h1 span.title-text{
-  color: #5F1972 !important; 
-}
-
-section.backgroundTitre_jaune h1 span.header-section-number, section.backgroundTitre_jaune h1 span.title-text{
-  color: #A36914 !important; 
-}
-
-section.backgroundTitre_vert h1 span.header-section-number, section.backgroundTitre_vert h1 span.title-text{
-  color: #069F9C !important; 
-}
-
-
-
 
 .level1 {
-/*  display: flex !important;
-  align-items: center;
-  justify-content: center;*/
-  
   h1 {
     font-weight: bold;
     /*text-decoration: underline;*/
     display: flex;
     flex-direction: column;
+    top: -1em;
     align-items: flex-start;
     text-align: left;
   }
-  .header-section-number{
-    font-size: 7em;
-    top: -0.28em;
+  /* hide Quarto's plain "1" — the visible number is drawn by ::before below.
+  Note: font-size:0 collapses the span's own em-based offsets, so the
+  position nudges live on ::before now (in rem/em of the ::before). */
+  .header-section-number {
+    font-size: 0;
     position: relative;
-    left: .35em;
   }
-  .title-text{
+  .header-section-number::before {
+    content: counter(sectionTitre, decimal-leading-zero); /* 01 … 12 */
+    font-size: 28.5rem; /* rem, not em see above */
+    line-height: 1;
+    position: relative;
+    top: -0.28em;
+    left: 0.35em;
+  }
+
+  .title-text {
     font-size: 1.7em;
     position: relative;
     top: -1em;
@@ -297,29 +294,30 @@ section.backgroundTitre_vert h1 span.header-section-number, section.backgroundTi
   }
 }
 
-
 h1:not(.title):not(:has(span)) {
   font-size: 3em !important;
   top: 2em;
   position: relative;
 }
 
-.logoTopRightTitre{
+.logoTopRightTitre {
   width: 20%;
-  top: -40%;
+  top: -50%;
   position: absolute;
   right: -2em;
 }
 
-
 /***********Page Standard************/
 
-div.backgroundStandard, div.backgroundStandard_bleu, div.backgroundStandard_violet
-,div.backgroundStandard_jaune, div.backgroundStandard_vert, div.backgroundStandard_multi {
+div.backgroundStandard,
+div.backgroundStandard_bleu,
+div.backgroundStandard_violet,
+div.backgroundStandard_jaune,
+div.backgroundStandard_vert,
+div.backgroundStandard_multi {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 
 .level2 {
   h2 {
@@ -335,7 +333,7 @@ div.backgroundStandard, div.backgroundStandard_bleu, div.backgroundStandard_viol
   text-transform: uppercase;
   left: 6.5em;
   width: 65%;
-  
+
   p {
     color: $grey-color-endPage;
   }
@@ -349,13 +347,13 @@ div.backgroundStandard, div.backgroundStandard_bleu, div.backgroundStandard_viol
   text-transform: uppercase;
   left: 6.5em;
   width: 65%;
-  
+
   p {
     color: $grey-color-endPage;
   }
 }
 
-.logoTopLeftStandard{
+.logoTopLeftStandard {
   width: 15%;
   top: -9%;
   position: absolute;
@@ -369,7 +367,7 @@ div.backgroundPageFinale {
   background-size: cover;
 }
 
-.coordonneesFinales{
+.coordonneesFinales {
   position: relative;
   top: 2em;
   left: 1em;
@@ -378,7 +376,7 @@ div.backgroundPageFinale {
 .coordonnees {
   font-size: 0.7em;
   margin-top: 2em;
-  
+
   ul li {
     color: white;
     font-weight: bold;
@@ -386,7 +384,7 @@ div.backgroundPageFinale {
   }
 }
 
-.gauche{
+.gauche {
   top: 8em;
   position: relative;
 }
@@ -405,7 +403,6 @@ div.backgroundPageFinale {
 li:has(> span.ligneBlancheApres) {
   margin-bottom: 3em !important; /* Espace après le <li> */
 }
-
 
 /******************MENU****************/
 
@@ -432,7 +429,7 @@ li:has(> span.ligneBlancheApres) {
   p {
     color: $color-text-menu;
   }
-  
+
   ul {
     padding-left: 5px;
     li {
@@ -461,7 +458,7 @@ img.logo {
   margin-bottom: -1% !important;
 }
 
-img.logo.logo_insee{
+img.logo.logo_insee {
   width: 70px !important;
 }
 
@@ -475,10 +472,9 @@ img.logo.logo_insee{
   image-resolution: from-image;
 }
 
-.divCachee{
+.divCachee {
   display: none !important;
 }
-
 
 /***************WIDGETS*******************/
 
@@ -499,19 +495,20 @@ blockquote {
   font-style: italic !important;
 }
 
-summary{
+summary {
   cursor: pointer;
 }
 
 /***************FENETRE MODALE*******************/
 
-.taille_iframe iframe{
+.taille_iframe iframe {
   height: 500px;
 }
 
 /******************packages DT**********************/
 
-.datatables, .cell-output-display {
+.datatables,
+.cell-output-display {
   font-size: 70%;
 }
 
@@ -524,10 +521,9 @@ summary{
   padding: 0 5px;
 }
 
-
 /******************SCROLL VIEW MODE**********************/
 
-.scroll-page-content #title-slide{
+.scroll-page-content #title-slide {
   left: 51% !important;
 }
 
@@ -541,14 +537,14 @@ summary{
 }
 
 .scroll-page-content .toc-card {
-    flex: 0 0 calc(20% - 1rem); /* 5 cartes par ligne */
-/*    background: #f8f9fa;*/
-    background: none;
-    border-radius: 8px;
-    padding: 1rem;
-/*    box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
-    transition: all 0.2s;
-    text-align: center;
+  flex: 0 0 calc(20% - 1rem); /* 5 cartes par ligne */
+  /*    background: #f8f9fa;*/
+  background: none;
+  border-radius: 8px;
+  padding: 1rem;
+  /*    box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
+  transition: all 0.2s;
+  text-align: center;
 }
 
 .scroll-page-content h1:not(.title) {
@@ -558,8 +554,6 @@ summary{
 
 /*****FIN Scroll View Mode******/
 
-
-
 /******************PDF EXPORT VIEW MODE**********************/
 /*CSS quand on tape sur la touche e*/
 
@@ -567,11 +561,11 @@ summary{
   position: relative !important;
 }
 
-.pdf-page #title-slide{
+.pdf-page #title-slide {
   left: 7% !important;
 }
 
-.pdf-page>div.backgroundPageFinale{
+.pdf-page > div.backgroundPageFinale {
   position: relative !important;
 }
 
@@ -579,50 +573,45 @@ html.print-pdf div#footerPersonnalise {
   visibility: hidden;
 }
 
-
-.pdf-page  p.date{
-  top: 35em;  
+.pdf-page p.date {
+  top: 35em;
 }
 
-.print-pdf .slide-logo{
+.print-pdf .slide-logo {
   display: none !important;
 }
 
-.pdf-page .logoTopRightTitre{
+.pdf-page .logoTopRightTitre {
   display: none;
 }
 
-.pdf-page .logoTopLeftStandard{
+.pdf-page .logoTopLeftStandard {
   display: none;
 }
 
 /******************CSS quand on fait fichier>Imprimer... quand on est sur le PDF EXPORT VIEW MODE**********************/
 
 @media print {
-
   .level2 h2 {
     margin-top: 6%;
   }
-  
-  [id^="chapters_"] {
-  top: 7em !important;
-  left: 2em;
-  position: relative !important;
-}
 
-  #pageDeFin{
+  [id^="chapters_"] {
+    top: 7em !important;
+    left: 2em;
+    position: relative !important;
+  }
+
+  #pageDeFin {
     position: relative !important;
     top: -28em !important;
   }
-  
 
-  .print_code details{
+  .print_code details {
     display: contents !important;
   }
-  
+
   .no-print-pdf {
     display: none !important;
   }
-  
 }
-
