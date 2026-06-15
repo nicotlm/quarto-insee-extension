@@ -1,13 +1,14 @@
 title: insee-clair
 author: Romain Puyau
+version: 0.1.0
+quarto-required: ">=1.4.0"
 contributes:
   formats:
     revealjs:
       header-includes: |
-        <link rel="icon" type="image/png" sizes="32x32" href="_extensions/insee-clair/ressources/revealJs/insee_embleme_couleurs_RVB.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="_extensions/inseefrlab/insee-clair/ressources/revealJs/insee_embleme_couleurs_RVB.svg">
 
-      include-after-body: ["modulesCompl/footer.html"]
-      logo: _extensions/nicotlm/insee-clair/ressources/img/licences/cc/png/by-sa.png #uncomment here to add license logo for instance or comment to hide it
+      logo: _extensions/inseefrlab/insee-clair/ressources/img/licences/cc/png/by-sa.png #uncomment here to add license logo for instance or comment to hide it
 
       embed-resources: true
       df-print: paged
@@ -68,8 +69,18 @@ contributes:
         - "_extensions/insee-clair/toc-style.html"
       filters:
         - "toc-filter.lua"
+      footer: |
+        <a href="https://www.insee.fr/fr/accueil" target="_blank"><img class="footer-logo footer-logo-inseefr" src="_extensions/insee-clair/ressources/img/logos/svg/1_inseeFR_Noir.svg" alt="Insee.fr"></a>
+        <a href="https://bsky.app/profile/insee.fr" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/png/logo_bluesky.png" alt="Bluesky"></a>
+        <a href="https://www.instagram.com/insee_fr/" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/png/logo_instagram.jpg" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/insee" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/png/logoLinkedIn_rond.png" alt="LinkedIn"></a>
+        <a href="https://x.com/InseeFr" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/png/logo_X.png" alt="X"></a>
+        <a href="https://www.youtube.com/channel/UChCCvJTbZEYsCXyfu27eQ6g" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/png/logoYoutube_rond.png" alt="YouTube"></a>
+        <a href="https://blog.insee.fr/" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/png/logo_blog.png" alt="Blog"></a>
+        <a href="https://www.insee.fr/fr/information/2381941" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/png/flux_rss.png" alt="RSS"></a>
 
-    odt:
+
+    odt
       reference-doc: ressources/libreOffice-template.odt
       # pandoc-lua-filters: ["custom_writer.lua"]
       toc: true
