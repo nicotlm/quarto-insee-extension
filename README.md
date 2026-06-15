@@ -2,7 +2,6 @@
 
 ::include{file=CHANGELOG}
 
-
 # Présentation Quarto
 
 Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant désormais {+la charte graphique de l'Insee 2025.+}
@@ -19,7 +18,7 @@ Par défaut, la présentation est "branchée" sur la charte graphique du thème 
 
 :arrow_right: Les images des licences, des logos de chaque région et de chaque SSM, et les pictogrammes Insee sont disponibles dans le dossier `img/`.
 
-Pour changer de format, vous devez sélectionner le render associé au thème de la charte graphique de l'Insee que vous souhaitez utiliser, comme le montre l'image suivante : 
+Pour changer de format, vous devez sélectionner le render associé au thème de la charte graphique de l'Insee que vous souhaitez utiliser, comme le montre l'image suivante :
 
 ![](_extensions/insee-clair/ressources/divers/renders_quarto.png)
 
@@ -35,8 +34,7 @@ Le fait de faire l'action "Render" dans Rstudio entraîne, s'il n'existe pas, la
 
 :warning: Si vous souhaitez ajouter des images par exemple dans votre support, il faut les ajouter dans le dossier `img` à la racine du projet et non dans le dossier `_output/img/`.
 
-Si la génération de votre support de présentation échoue (page not found = page blanche dans le navigateur), alors il vous faudra copier dans le navigateur l'URL mentionnée dans l'onglet `Background Jobs` de Rstudio. 
-
+Si la génération de votre support de présentation échoue (page not found = page blanche dans le navigateur), alors il vous faudra copier dans le navigateur l'URL mentionnée dans l'onglet `Background Jobs` de Rstudio.
 
 ## :three: Les feuilles de style
 
@@ -45,7 +43,6 @@ Les feuilles de style en cascade (CSS) permettent la mise en forme du support. C
 - `Insee_Commun.scss` : Style commun aux différents thèmes. Ce fichier, au format SCSS, permet de respecter la charte graphique de base de l'Insee.
 - `Insee_clair.css` : Ces feuilles CSS sont dédiées aux styles propres à chacun des thèmes permettant de respecter la charte graphique de l'Insee.
 - `default.css` : Ce fichier CSS regroupe l'ensemble des classes mises à votre disposition pouvant être utilisées pour modifier le style du support (couleurs, box, etc..) C'est probablement dans cette feuille que je rajouterai de nouveaux styles si besoin.
-- `stylePerso.css` : Feuille de style à priori dédiée à la customisation personnelle du support.
 
 :warning: Ces feuilles de style n'intègrent pas toutes les classes qui sont à votre disposition. Quarto intègre nativement beaucoup de fonctionnalités dont l'utilisation présente des similitudes (ex: la classe **.fragment**). Rendez-vous sur la documentation officielle pour découvrir le champ des possibles. :wink:
 
@@ -54,6 +51,7 @@ Les feuilles de style en cascade (CSS) permettent la mise en forme du support. C
 Pour exporter le support en PDF, il faut suivre les instructions écrites dans les slides dédiées (fichier `05_exportPdf.qmd`). En plus de ces instructions, il faut aussi garder dans les titres des slides leurs identifiants techniques car il y a un repositionnement des éléments composant les slides qui est effectué pour l'export.
 
 Ces identifiants sont :
+
 - pour les slides des titres principaux : `chapters_<numeroDuChapitre>`
 - pour les slides des sections : `section_<numeroDuChapitre>_<numeroDeLaSection>`
 
@@ -63,7 +61,6 @@ En voici des exemples :
 # titre de niveau 1 {#chapters_0 .backgroundTitre_bleu}
 
 ## Titre de niveau 2 {#section_0_1 .backgroundStandard}
-
 ```
 
 Il y a donc du CSS dédié au support quand on passe en PDF export Mode (quand on tape e sur le clavier). Celui-ci est réparti dans plusieurs feuilles de style et débute à chaque fois par les classes `.pdf-page` ou `.print-pdf`. Il y a également du css spécifique quand on lance l'impression du support en PDF. Celui-ci se situe dans le scope suivant :
@@ -85,8 +82,8 @@ Il s'agit de l'uri présente dans le dépôt à la page suivante : "settings →
 La branche déployée sur gitlab est définie dans le fichier `.gitlab-ci.yml` dans le snippet ci-après :
 
 ```yml
-  only:
-    - main
+only:
+  - main
 ```
 
 ## :six: Précaution d'usage
@@ -98,7 +95,7 @@ La branche déployée sur gitlab est définie dans le fichier `.gitlab-ci.yml` d
 - Ce projet fonctionne désormais sur AUS. Cependant, il subsiste un problème de "Render" lorsqu'on utilise les fonctionnalités suivantes :
   - mathJax pour les équations mathématiques
   - les popups
-  
+
 Ces problèmes viennent du fait que la librairie mathJax et les pages javascript des popups sont récupérées sur des serveurs (cdn) via internet, ce qui est bloqué par défaut sur AUS.
 
 ## :seven: Licence
@@ -111,7 +108,7 @@ logo: img/licences/cc/png/by-sa.png
 
 ## :eight: Contribution
 
-Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, n'hésitez pas à m'en faire part et à transmettre ces informations. Tout enrichissement est bon à prendre. 
+Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, n'hésitez pas à m'en faire part et à transmettre ces informations. Tout enrichissement est bon à prendre.
 
 ## :nine: Récupération du projet
 
@@ -124,11 +121,10 @@ et à partir de ce zip, initier (ou pas) un nouveau dépôt sur gitlab dans votr
 OU
 
 - forker le projet si vous souhaitez ultérieurement y contribuer via des merges request. Pour cela, voici les étapes à suivre :
-
   1. Forker le projet template et ajouter le fork dans son groupe. Changer le nom du projet pour éviter toute confusion ultérieure entre les 2 projets (le projet forké et le projet initial qui s'appelle presentation-quarto).
   2. Ouvrer le projet forké via RStudio.(File -> New Project.. -> Version Control -> Git).
   3. Dans le terminal de RStudio, coller la ligne suivante : `git remote add upstream https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto.git`. Vous pouvez vérifier l'ajout de cette remote en tapant `git remote -v`.
   4. Mettre à jour votre projet forké avec le projet initial en faisant : `git pull upstream main`. C'est via cette commande que vous pourrez rapatrier dans votre projet forké les corrections et évolutions faites sur ce projet.
-  5. Vérifier que vous avez bien récupéré la branche main du dépôt initial en tapant `git branch -a` : la ligne suivante apparaît dans la console ->  remotes/upstream/main.
+  5. Vérifier que vous avez bien récupéré la branche main du dépôt initial en tapant `git branch -a` : la ligne suivante apparaît dans la console -> remotes/upstream/main.
   6. Mettre à jour sa branche main du dépôt forké : `git push`
   7. Réaliser votre ou vos propres supports de formation sur une ou plusieurs branches dédiées. Ne jamais travailler sur la branche main si vous souhaitez récupérer les possibles futures évolutions / corrections du dépôt initial.
