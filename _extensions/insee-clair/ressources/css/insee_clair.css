@@ -138,27 +138,27 @@ section.sectionColor4 h1 {
 
 /*Pages standard*/
 div.backgroundStandard {
-  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche.svg);
+  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche.svg);
 }
 
 div.backgroundStandard_bleu {
-  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche-cercle1.svg);
+  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle1.svg);
 }
 
 div.backgroundStandard_violet {
-  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche-cercle2.svg);
+  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle2.svg);
 }
 
 div.backgroundStandard_jaune {
-  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche-cercle3.svg);
+  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle3.svg);
 }
 
 div.backgroundStandard_vert {
-  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche-cercle4.svg);
+  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle4.svg);
 }
 
 div.backgroundStandard_multi {
-  background-image: url(../_extensions/insee-clair/ressources/revealJs/3_Template-INSEE-Clair_Page-blanche-cercle5.svg);
+  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle5.svg);
 }
 
 /*Page finale*/
