@@ -120,19 +120,22 @@
 }
 
 /*pages Titre*/
-/* define the 4 colors based on section names created by lua filter*/
-section.sectionColor1 h1 {
-  color: #0f417a !important;
+div.backgroundTitre_bleu{
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire1.svg);
 }
-section.sectionColor2 h1 {
-  color: #5f1972 !important;
+
+div.backgroundTitre_violet{
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire2.svg);
 }
-section.sectionColor3 h1 {
-  color: #a36914 !important;
+
+div.backgroundTitre_jaune{
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire3.svg);
 }
-section.sectionColor4 h1 {
-  color: #069f9c !important;
+
+div.backgroundTitre_vert{
+  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire4.svg);
 }
+
 
 /*Pages standard*/
 
