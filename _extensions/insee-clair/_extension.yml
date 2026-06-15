@@ -89,7 +89,7 @@ contributes:
       css: [ressources/css/insee_clair.css, ressources/css/default.css]
 
       title-slide-attributes:
-        data-background-image: _extensions/inseefrlab/insee-clair/ressources/revealJs/1_Template-INSEE-Clair_premiere-page.svg
+        data-background-image: _extensions/insee-clair/ressources/revealJs/1_Template-INSEE-Clair_premiere-page.svg
         data-background-size: contain
         data-background-opacity: "1"
 
@@ -105,8 +105,7 @@ contributes:
         <a href="https://www.youtube.com/channel/UChCCvJTbZEYsCXyfu27eQ6g" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/logoYoutube_rond.svg" alt="YouTube"></a>
         <a href="https://blog.insee.fr/" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/logo_blog.svg" alt="Blog"></a>
         <a href="https://www.insee.fr/fr/information/2381941" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/flux_rss.svg" alt="RSS"></a>
-      filters:
-        - slide-background.lua
+
 
     odt:
       reference-doc: ressources/open_document/libreOffice-template.odt
