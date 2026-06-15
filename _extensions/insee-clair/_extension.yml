@@ -110,6 +110,7 @@ contributes:
 
     odt:
       reference-doc: ressources/open_document/libreOffice-template.odt
+      # pandoc-lua-filters: ["custom_writer.lua"]
       toc: true
       toc-title: "Sommaire"
       toc-depth: 3
