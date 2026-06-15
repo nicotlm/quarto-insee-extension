@@ -109,7 +109,7 @@ contributes:
         - slide-background.lua
 
     odt:
-      reference-doc: ressources/libreOffice-template.odt
+      reference-doc: ressources/open_document/libreOffice-template.odt
       toc: true
       toc-title: "Sommaire"
       toc-depth: 3
