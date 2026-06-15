@@ -65,3 +65,5 @@ contributes:
         <a href="https://www.youtube.com/channel/UChCCvJTbZEYsCXyfu27eQ6g" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/png/logoYoutube_rond.png" alt="YouTube"></a>
         <a href="https://blog.insee.fr/" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/png/logo_blog.png" alt="Blog"></a>
         <a href="https://www.insee.fr/fr/information/2381941" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/png/flux_rss.png" alt="RSS"></a>
+      filters:
+        - slide-background.lua
