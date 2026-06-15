@@ -48,14 +48,9 @@ contributes:
         data-background-size: contain
         data-background-opacity: "1"
 
-      toc: false
+      toc: true
       toc-title: Sommaire
       toc-depth: 1
-      template-partials:
-        - "_extensions/insee-clair/toc-slide.html"
-        - "_extensions/insee-clair/toc-style.html"
-      filters:
-        - "toc-filter.lua"
       footer: |
         <a href="https://www.insee.fr/fr/accueil" target="_blank"><img class="footer-logo footer-logo-inseefr" src="_extensions/insee-clair/ressources/img/logos/svg/1_inseeFR_Noir.svg" alt="Insee.fr"></a>
         <a href="https://bsky.app/profile/insee.fr" target="_blank"><img class="footer-logo" src="_extensions/insee-clair/ressources/img/logos/png/logo_bluesky.png" alt="Bluesky"></a>
