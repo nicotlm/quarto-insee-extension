@@ -5,10 +5,10 @@ contributes:
     revealjs:
       header-includes: |
         <link rel="icon" type="image/png" sizes="32x32" href="_extensions/insee-clair/ressources/revealJs/insee_embleme_couleurs_RVB.svg">
-        
+
       include-after-body: ["modulesCompl/footer.html"]
-      logo:  img/licences/cc/png/by-sa.png #uncomment here to add license logo for instance or comment to hide it
-      
+      logo: _extensions/nicotlm/insee-clair/ressources/img/licences/cc/png/by-sa.png #uncomment here to add license logo for instance or comment to hide it
+
       embed-resources: true
       df-print: paged
       slide-number: c/t
@@ -22,7 +22,7 @@ contributes:
       transition-speed: slow
       number-sections: true
       number-depth: 2
-      
+
       link-external-newwindow: true
       # link-external-icon: true
       # footnotes-hover: true
@@ -32,32 +32,34 @@ contributes:
       code-copy: true
       code-annotations: hover #below / hover / select
       highlight-style: atom-one
-      
-      menu: {
-        side: 'left',
-        width: 'wide',
-        markers: true,
-        transitions: true,
-        custom: [
-            {
-              title: 'Plugins',
-              icon: '<i class="fa-solid fa-circle-info"></i>',
-              src: 'modulesCompl/customMenu.html'
-            }
-          ]
-      }
-      
+
+      menu:
+        {
+          side: "left",
+          width: "wide",
+          markers: true,
+          transitions: true,
+          custom:
+            [
+              {
+                title: "Plugins",
+                icon: '<i class="fa-solid fa-circle-info"></i>',
+                src: "modulesCompl/customMenu.html",
+              },
+            ],
+        }
+
       width: 1920
       height: 1080
-      
+
       theme: css/Insee_Commun.scss
       css: [css/insee_clair.css, css/default.css, css/stylePerso.css]
-      
+
       title-slide-attributes:
         data-background-image: _extensions/insee-clair/ressources/revealJs/1_Template-INSEE-Clair_premiere-page.svg
         data-background-size: contain
         data-background-opacity: "1"
-        
+
       toc: false
       toc-title: Sommaire
       toc-depth: 1
@@ -66,8 +68,7 @@ contributes:
         - "_extensions/insee-clair/toc-style.html"
       filters:
         - "toc-filter.lua"
-        
-        
+
     odt:
       reference-doc: ressources/libreOffice-template.odt
       # pandoc-lua-filters: ["custom_writer.lua"]
@@ -76,7 +77,7 @@ contributes:
       toc-depth: 3
       styles: true
       df-print: kable
-      
+
     # pptx:
     #   reference-doc: ressources/powerpoint-template.pptx
     #   toc: true
