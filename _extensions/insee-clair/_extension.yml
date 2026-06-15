@@ -52,8 +52,8 @@ contributes:
       width: 1920
       height: 1080
 
-      theme: css/Insee_Commun.scss
-      css: [css/insee_clair.css, css/default.css, css/stylePerso.css]
+      theme: ressources/css/Insee_Commun.scss
+      css: [ressources/css/insee_clair.css, ressources/css/default.css]
 
       title-slide-attributes:
         data-background-image: _extensions/insee-clair/ressources/revealJs/1_Template-INSEE-Clair_premiere-page.svg
