@@ -9,7 +9,8 @@ contributes:
         <link rel="icon" type="image/png" sizes="32x32" href="_extensions/inseefrlab/insee-clair/ressources/revealJs/insee_embleme_couleurs_RVB.svg">
 
       logo: _extensions/inseefrlab/insee-clair/ressources/img/licences/cc/png/by-sa.png #uncomment here to add license logo for instance or comment to hide it
-
+      view-distance: 100 # keep all slides rendered → counter sees them all when rendering title slides
+      mobile-view-distance: 100
       embed-resources: true
       df-print: paged
       slide-number: c/t
@@ -34,13 +35,7 @@ contributes:
       code-annotations: hover #below / hover / select
       highlight-style: atom-one
 
-      menu:
-        {
-          side: "left",
-          width: "wide",
-          markers: true,
-          transitions: true
-        }
+      menu: { side: "left", width: "wide", markers: true, transitions: true }
 
       width: 1920
       height: 1080
@@ -74,7 +69,6 @@ contributes:
 
     odt
       reference-doc: ressources/libreOffice-template.odt
-      # pandoc-lua-filters: ["custom_writer.lua"]
       toc: true
       toc-title: "Sommaire"
       toc-depth: 3
