@@ -1,0 +1,59 @@
+# Utilisation d'une fenêtre modale {#chapters_4 .backgroundTitre_bleu}
+
+## Les popups {#section_4_1 .backgroundStandard_bleu}
+
+:::{.enteteAvecTitre}
+utilisation d'une fenêtre modale
+:::
+
+- Utilisation du plugin multimodal dont la documentation est accessible sur [le dépôt GitHub](https://github.com/martinomagnifico/quarto-multimodal){target="_blank"}
+
+- Les fenêtres modales peuvent être utilisées pour :
+  * montrer [une image](#){data-modal-type="image" data-modal-url="_extensions/insee-clair/ressources/divers/Logo_Insee_SignatureAdroite.jpg"}
+  * montrer [une image (code différent)](_extensions/insee-clair/ressources/divers/Logo_Insee_SignatureAdroite.jpg){data-modal-type="image"}
+  * montrer [une video stockée dans le projet](#){data-modal-type="video" data-modal-url="videos/presentation_nouveauLogo.mp4"}
+  * intégration d'une [video hébergée sur youtube dans une fenêtre modale](#){data-modal-type="html" data-modal-padding="1em" data-modal-class="taille_iframe" data-modal-url="#somehiddendiv_2"}
+  * afficher du [contenu HTML](#){data-modal-type="html" data-modal-url="#somehiddendiv"}
+  * accueillir un [lien vers un site](https://fr.wikipedia.org/wiki/Institut_national_de_la_statistique_et_des_%C3%A9tudes_%C3%A9conomiques){data-modal-type="iframe"}
+
+::: {#somehiddendiv .hidden}
+<h2>Exemple de contenu HTML</h2>
+Il est possible d'appeler un fichier externe et de l'intégrer dans la popup en modifiant le paramètre suivant comme suit :
+
+- `data-modal-url="demo_files/externalhtml.html"`
+- `data-modal-url="demo_files/externalmd.md"`(les attributs quarto ne fonctionnent pas dans ce cas)
+:::
+
+::: {#somehiddendiv_2 .hidden}
+<h2>Vidéo de présentation de l'Insee</h2>
+{{< video https://www.youtube.com/watch?v=QPa5e9Gz0Vs >}}
+:::
+
+>NB: Cette fonctionnalité apparait bien sur {{< var variables.forgeInterne >}} et fonctionne correctement quand vous lancez le support en local (avec quarto ou en double cliquant sur le fichier html)
+>
+>Par contre, elle n'est plus accessible lors de l'export en PDF ou .odt.
+
+
+## Les attributs {#section_4_2 .backgroundStandard_multi}
+
+:::{.enteteAvecTitre}
+utilisation d'une fenêtre modale
+:::
+
+::::{.rehausserContenuAvecTitre}
+
+- `data-modal-navblock` : si valorisé à "true", alors bloque la navigation tant que la popup est ouverte.
+- `data-modal-overlaycolor` : modifie la couleur de fond derrière la popup
+- `data-modal-background` : change la couleur de fond dans la popup
+- `data-modal-padding` : ajoute un écart entre la bordure de la popup et l'image, la vidéo ou le texte présent dans la popup.
+- `data-modal-class` : permet d'ajouter une classe (ou plusieurs en les séparant par un espace ou une virgule) CSS à la fenêtre modale
+
+[Exemple :]{.souligneRouge} [Show modal](#){data-modal-type="image" data-modal-url="_extensions/insee-clair/ressources/divers/Logo_Insee_SignatureAdroite.jpg" data-modal-overlaycolor="#CA987F" data-modal-background="gray" data-modal-padding="2em" data-modal-class="bordureRouge"}
+
+:::{.example .tiny}
+[![](_extensions/insee-clair/ressources/divers/Logo_Insee_SignatureAdroite.jpg)](#){.play_icone data-modal-type="video" data-modal-url="videos/presentation_nouveauLogo.mp4"}
+:::
+
+::::
+
+
