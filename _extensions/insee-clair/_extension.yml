@@ -37,8 +37,8 @@ contributes:
       menu:
         side: "left"
         width: "wide"
-        markers: true,
-        transitions: true,
+        markers: true
+        transitions: true
         custom:
           - title: "Plugins"
             icon: '<i class="fa-solid fa-circle-info"></i>'
