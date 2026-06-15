@@ -107,3 +107,11 @@ contributes:
         <a href="https://www.insee.fr/fr/information/2381941" target="_blank"><img class="footer-logo" src="_extensions/nicotlm/insee-clair/ressources/img/logos/svg/flux_rss.svg" alt="RSS"></a>
       filters:
         - slide-background.lua
+
+    odt:
+      reference-doc: ressources/libreOffice-template.odt
+      toc: true
+      toc-title: "Sommaire"
+      toc-depth: 3
+      styles: true
+      df-print: kable
