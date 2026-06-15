@@ -218,33 +218,17 @@ p.date {
 
 /***********Page Sommaire ************/
 
-#custom-toc-slide {
+#TOC {
   height: 100% !important;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-#custom-toc-slide h2 {
+#TOC h2 {
   color: $body-color;
   margin-top: 1%;
   text-align: left;
   padding-left: 8%;
-}
-
-.card-number {
-  text-align: left;
-  padding-left: 20%;
-  font-size: 235% !important;
-  position: relative;
-  min-height: 30px; /* Assure que l'icône a de l'espace */
-  font-weight: bold;
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-
-.card-title {
-  text-align: left;
-  font-size: xx-large;
 }
 
 /***********Page Titre ************/
