@@ -15,10 +15,6 @@ mouse-wheel: false
 transition: slide
 # multiplex: true
 
-embed-resources: false
-
-custom-toc: true
-
 editor:
   render-on-save: true
 
