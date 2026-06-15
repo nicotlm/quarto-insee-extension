@@ -39,15 +39,7 @@ contributes:
           side: "left",
           width: "wide",
           markers: true,
-          transitions: true,
-          custom:
-            [
-              {
-                title: "Plugins",
-                icon: '<i class="fa-solid fa-circle-info"></i>',
-                src: "modulesCompl/customMenu.html",
-              },
-            ],
+          transitions: true
         }
 
       width: 1920
