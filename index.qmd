@@ -32,7 +32,7 @@ params:
 # Titre de niveau 1 {#chapters_0 .backgroundTitre_bleu}
 
 :::{.logoTopRightTitre}
-![](img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
+![](_extensions/inseefrlab/insee-clair/ressources/img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
 :::
 
 ## Titre de niveau 2 {#section_0_1 .backgroundStandard_bleu}
@@ -42,7 +42,7 @@ titre de niveau 1
 :::
 
 :::{.logoTopLeftStandard}
-![](img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
+![](_extensions/inseefrlab/insee-clair/ressources/img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
 :::
 
 
