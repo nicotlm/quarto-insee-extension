@@ -121,19 +121,19 @@
 
 /*pages Titre*/
 div.backgroundTitre_bleu{
-  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire1.svg);
+  background-image: url(../revealJs/2_Template-INSEE-Clair_Intercalaire1.svg);
 }
 
 div.backgroundTitre_violet{
-  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire2.svg);
+  background-image: url(../revealJs/2_Template-INSEE-Clair_Intercalaire2.svg);
 }
 
 div.backgroundTitre_jaune{
-  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire3.svg);
+  background-image: url(../revealJs/2_Template-INSEE-Clair_Intercalaire3.svg);
 }
 
 div.backgroundTitre_vert{
-  background-image: url(../_extensions/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire4.svg);
+  background-image: url(../revealJs/2_Template-INSEE-Clair_Intercalaire4.svg);
 }
 
 
