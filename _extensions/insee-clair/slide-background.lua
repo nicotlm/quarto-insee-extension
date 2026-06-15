@@ -2,12 +2,12 @@
 -- background (cycling the 4 intercalaire designs) and a colour class.
 
 local n = 0
-local base = "_extensions/nicotlm/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire"
+local base = "_extensions/inseefrlab/insee-clair/ressources/revealJs/2_Template-INSEE-Clair_Intercalaire"
 
 function Header(h)
   -- Background page finale
   if h.identifier == "pageDeFin" then
-    h.attributes["background-image"] = "_extensions/nicotlm/insee-clair/ressources/revealJs/6_Template-INSEE-Clair_Diapo-finale.svg"
+    h.attributes["background-image"] = "_extensions/inseefrlab/insee-clair/ressources/revealJs/6_Template-INSEE-Clair_Diapo-finale.svg"
     h.attributes["background-size"]  = "100% 100%"
     return h
   end
