@@ -1,0 +1,8 @@
+index.qmd
+_quarto.yml
+_variables.yml
+dev.R
+_output/
+slides/
+CHANGELOG*
+*.html
