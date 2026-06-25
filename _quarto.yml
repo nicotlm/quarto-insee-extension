@@ -18,9 +18,3 @@ execute:
   message: false
   warning: false
   error: true
-
-revealjs-plugins:
-  - pointer
-  - confetti
-  - verticator
-  - multimodal

@@ -12,6 +12,16 @@ contributes:
       logo: _extensions/inseefrlab/insee-clair/ressources/img/licences/cc/png/by-sa.png #uncomment here to add license logo for instance or comment to hide it
       view-distance: 100 # keep all slides rendered → counter sees them all when rendering title slides
       mobile-view-distance: 100
+
+
+      # Enable the bundled reveal plugins from the format itself, so they
+      # travel with `quarto add` AND `quarto use template`
+      revealjs-plugins:
+        - pointer
+        - confetti
+        - verticator
+        - multimodal
+
       embed-resources: true
       df-print: paged
       slide-number: c/t
