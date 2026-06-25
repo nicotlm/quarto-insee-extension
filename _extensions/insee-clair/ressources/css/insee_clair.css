@@ -165,8 +165,22 @@ div.backgroundStandard_multi {
   background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle5.svg);
 }
 
-/*Page finale - background set in lua filter*/
+/*Page finale*/
+div.backgroundPageFinale {
+  background-image: url(../revealJs/6_Template-INSEE-Clair_Diapo-finale.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 
+/* Ou bien avec un ID et non une classe */
+/* #pageDeFin {
+  background-image: url(../revealJs/6_Template-INSEE-Clair_Diapo-finale.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+} */
+ 
 /* Footer characteristics and only for the first slide */
 .reveal .footer .footer-logo {
   height: 35px;
