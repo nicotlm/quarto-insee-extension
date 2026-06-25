@@ -13,15 +13,14 @@ contributes:
       view-distance: 100 # keep all slides rendered → counter sees them all when rendering title slides
       mobile-view-distance: 100
 
-
       # Enable the bundled reveal plugins from the format itself, so they
-      # travel with `quarto add` AND `quarto use template`
+      # travel with `quarto add` AND `quarto use template` (was in _quarto.yml,
+      # which is .quartoignored and never reaches the installed template).
       revealjs-plugins:
         - pointer
         - confetti
         - verticator
         - multimodal
-
       embed-resources: true
       df-print: paged
       slide-number: c/t
@@ -97,11 +96,6 @@ contributes:
 
       theme: ressources/css/Insee_Commun.scss
       css: [ressources/css/insee_clair.css, ressources/css/default.css]
-
-      title-slide-attributes:
-        data-background-image: _extensions/insee-clair/ressources/revealJs/1_Template-INSEE-Clair_premiere-page.svg
-        data-background-size: contain
-        data-background-opacity: "1"
 
       toc: true
       toc-title: Sommaire
