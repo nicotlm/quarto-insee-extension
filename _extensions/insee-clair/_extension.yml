@@ -26,6 +26,7 @@ contributes:
         - confetti
         - verticator
         - multimodal
+        - fontawesome
       embed-resources: true
       df-print: paged
       slide-number: c/t
