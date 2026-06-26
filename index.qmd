@@ -13,7 +13,6 @@ chalkboard: false # press the B key to toggle chalkboard
 jump-to-slide: true #press "g" to jump and the number of slide
 mouse-wheel: false
 transition: slide
-# multiplex: true
 
 editor:
   render-on-save: true
@@ -25,13 +24,13 @@ params:
   typeEquipement: "G103"
 ---
 
-# Titre de niveau 1 {#chapters_0 .backgroundTitre_violet}
+# Titre de niveau 1
 
 :::{.logoTopRightTitre}
 ![](_extensions/insee-clair/ressources/img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
 :::
 
-## Titre de niveau 2 {#section_0_1}
+## Titre de niveau 2
 
 :::{.enteteAvecTitre}
 titre de niveau 1
