@@ -249,28 +249,38 @@ section.backgroundTitre_vert h1 span.header-section-number, section.backgroundTi
 }
 
 
-
+/* Section-divider number: zero-padded counter (01, 02 … 12)*/
+.reveal .slides {
+  counter-reset: sectionTitre;
+}
+.reveal section.level1:not(.unnumbered) {
+  counter-increment: sectionTitre;
+}
 
 .level1 {
-/*  display: flex !important;
-  align-items: center;
-  justify-content: center;*/
-  
   h1 {
     font-weight: bold;
-    /*text-decoration: underline;*/
     display: flex;
     flex-direction: column;
+    top: -1em;
     align-items: flex-start;
     text-align: left;
   }
-  .header-section-number{
-    font-size: 7em;
-    top: -0.28em;
+  /* Hide Quarto's plain "1"; the visible number is drawn by ::before below.
+     font-size:0 collapses the span's em offsets, so the nudges live on ::before. */
+  .header-section-number {
+    font-size: 0;
     position: relative;
-    left: .35em;
   }
-  .title-text{
+  .header-section-number::before {
+    content: counter(sectionTitre, decimal-leading-zero); /* 01 … 12 */
+    font-size: 28.5rem; /* rem, not em (see note above) */
+    line-height: 1;
+    position: relative;
+    top: -0.28em;
+    left: 0.35em;
+  }
+  .title-text {
     font-size: 1.7em;
     position: relative;
     top: -1em;
@@ -295,7 +305,6 @@ h1:not(.title):not(:has(span)) {
 
 
 /***********Page Standard************/
-
 
 .level2 {
   h2 {
