@@ -119,53 +119,15 @@
   }
 }
 
-/*pages Titre*/
-div.backgroundTitre_bleu{
-  background-image: url(../revealJs/2_Template-INSEE-Clair_Intercalaire1.svg);
-}
+/*pages Titre background images set in auto-colors.lua filter*/
 
-div.backgroundTitre_violet{
-  background-image: url(../revealJs/2_Template-INSEE-Clair_Intercalaire2.svg);
-}
-
-div.backgroundTitre_jaune{
-  background-image: url(../revealJs/2_Template-INSEE-Clair_Intercalaire3.svg);
-}
-
-div.backgroundTitre_vert{
-  background-image: url(../revealJs/2_Template-INSEE-Clair_Intercalaire4.svg);
-}
-
-
-/*Pages standard*/
-
+/*pages standard background images set in auto-colors.lua filter*/
 .reveal .slide-background-content {
   background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-div.backgroundStandard_bleu {
-  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle1.svg);
-}
-
-div.backgroundStandard_violet {
-  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle2.svg);
-}
-
-div.backgroundStandard_jaune {
-  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle3.svg);
-}
-
-div.backgroundStandard_vert {
-  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle4.svg);
-}
-
-div.backgroundStandard_multi {
-  background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle5.svg);
-}
-
- 
 /* Footer characteristics and only for the first slide */
 .reveal .footer .footer-logo {
   height: 35px;
@@ -202,6 +164,8 @@ div.backgroundStandard_multi {
 .reveal .footer .footer-logo-inseefr {
   height: 18px;
 }
+
+/*pagesdefin background images set in auto-colors.lua filter*/
 
 /* Export to pdf : don't show footer - never */
 html.print-pdf .reveal .footer {

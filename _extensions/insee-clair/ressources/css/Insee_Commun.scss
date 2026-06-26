@@ -232,13 +232,6 @@ p.date {
 
 /***********Page Titre ************/
 
-div.backgroundTitre_bleu, div.backgroundTitre_violet, div.backgroundTitre_jaune, div.backgroundTitre_vert{
-  max-width: 100%;
-  height: auto;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
 section.backgroundTitre_bleu h1 span.header-section-number, section.backgroundTitre_bleu h1 span.title-text{
   color: #0F417A !important; 
 }
@@ -303,14 +296,6 @@ h1:not(.title):not(:has(span)) {
 
 /***********Page Standard************/
 
-div.backgroundStandard_bleu,
-div.backgroundStandard_violet,
-div.backgroundStandard_jaune,
-div.backgroundStandard_vert,
-div.backgroundStandard_multi {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
 
 .level2 {
   h2 {
