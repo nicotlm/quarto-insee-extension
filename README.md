@@ -62,22 +62,23 @@ Il y a du CSS dédié au support quand on passe en PDF export Mode (quand on tap
 
 Le support de présentation est consultable sur internet via l'url suivante :
 
-<http://pole-bpe.gitlab-pages.insee.fr/presentations-formations/presentation-quarto>
+- sur gitlab : http://pole-bpe.gitlab-pages.insee.fr/presentations-formations/presentation-quarto>
+- sur github : 
 
 Il s'agit de l'uri présente dans le dépôt à la page suivante : "settings → pages". Une redirection automatique est faite vers la page principale du support de présentation, à savoir `index.qmd` ou `index.html`.
 
-La branche déployée sur gitlab est définie dans le fichier `.gitlab-ci.yml` dans le snippet ci-après :
+La branche déployée sur gitlab/github est définie dans le fichier `.gitlab-ci.yml` ou `.github/workflows/deploy.yml` dans le snippet ci-après :
 
 ```yml
 only:
   - main
 ```
 
-## :six: Précaution d'usage
+## :six: Précaution d'usage (interne)
 
 - RStudio plante si vous essayez de changer de projet R ou de quitter RStudio alors que le render est encore en cours d'exécution (onglet {+ Background Jobs +} de RStudio). Pensez à stopper le processus avant de changer de projet R ou de quitter RStudio (bouton Stop).
 
-![](_extensions/insee-clair/ressources/divers/background_jobs_rstudio.png)
+![](img/background_jobs_rstudio.png)
 
 - Ce projet fonctionne désormais sur AUS. Cependant, il subsiste un problème de "Render" lorsqu'on utilise les fonctionnalités suivantes :
   - mathJax pour les équations mathématiques
@@ -98,6 +99,12 @@ logo: img/licences/cc/png/by-sa.png
 Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, n'hésitez pas à m'en faire part et à transmettre ces informations. Tout enrichissement est bon à prendre.
 
 ## :nine: Récupération du projet
+
+### Avec quarto
+Ce projet étant une extension quarto, vous pouvez démarrer une présentation au format Insee simplement en important le template. Pour cela, il suffit d'indiquer dans le terminal : 
+`quarto use template inseefrlab/quarto-insee-extension`. Vous devrez ensuite indiquer si vous faites confiances à ce modèle (indiquer Yes), si voulez créer un dossier pour ce modèle (en général Oui) et, si oui, le nom du dossier. Le dossier sera le nom du repo. Avec l'extension sont installées plusieurs autres plugins qui ajoutent des fonctionnalités à la présentation : indiquer le nombre de slides (verticator), lancer des confettis (confetti) etc. 
+
+### Manuellement
 
 Pour récupérer le projet, vous pouvez :
 
