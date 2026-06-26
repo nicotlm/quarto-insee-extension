@@ -115,6 +115,9 @@ contributes:
         <a href="https://blog.insee.fr/" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/logo_blog.svg" alt="Blog"></a>
         <a href="https://www.insee.fr/fr/information/2381941" target="_blank"><img class="footer-logo" src="_extensions/inseefrlab/insee-clair/ressources/img/logos/svg/flux_rss.svg" alt="RSS"></a>
 
+      filters:
+        - auto-colors.lua
+
 
     odt:
       reference-doc: ressources/open_document/libreOffice-template.odt

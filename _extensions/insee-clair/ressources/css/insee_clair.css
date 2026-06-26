@@ -1,11 +1,3 @@
- /* Page intro */
-#title-slide {
-  background-image: url(../revealJs/1_Template-INSEE-Clair_premiere-page.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 /*Sommaire*/
 
 #TOC {
@@ -173,14 +165,6 @@ div.backgroundStandard_multi {
   background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche-cercle5.svg);
 }
 
-/*Page finale*/
-#pageDeFin {
-  background-image: url(../revealJs/6_Template-INSEE-Clair_Diapo-finale.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
  
 /* Footer characteristics and only for the first slide */
 .reveal .footer .footer-logo {

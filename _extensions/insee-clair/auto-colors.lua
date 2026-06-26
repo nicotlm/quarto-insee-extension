@@ -7,6 +7,40 @@ local current_color = nil
 local default_palette = {"bleu", "violet", "jaune", "vert"}
 local color_palette = default_palette
 
+-- Backgrounds set via reveal's native data-background-image (full-bleed, reliable),
+-- exactly like the original slide-background.lua. Path hardcoded to inseefrlab to
+-- match title-slide-attributes and the footer logos.
+local bg_base = "_extensions/inseefrlab/insee-clair/ressources/revealJs/"
+local titre_bg = {
+  bleu   = "2_Template-INSEE-Clair_Intercalaire1.svg",
+  violet = "2_Template-INSEE-Clair_Intercalaire2.svg",
+  jaune  = "2_Template-INSEE-Clair_Intercalaire3.svg",
+  vert   = "2_Template-INSEE-Clair_Intercalaire4.svg",
+}
+local standard_bg = {
+  bleu   = "3_Template-INSEE-Clair_Page-blanche-cercle1.svg",
+  violet = "3_Template-INSEE-Clair_Page-blanche-cercle2.svg",
+  jaune  = "3_Template-INSEE-Clair_Page-blanche-cercle3.svg",
+  vert   = "3_Template-INSEE-Clair_Page-blanche-cercle4.svg",
+  multi  = "3_Template-INSEE-Clair_Page-blanche-cercle5.svg",
+}
+
+local function set_bg(el, file)
+  el.attributes["background-image"] = bg_base .. file
+  el.attributes["background-size"]  = "100% 100%"
+end
+
+-- Read the slide's final classes and attach the matching full-bleed background
+local function apply_background(el)
+  for _, cls in ipairs(el.classes) do
+    local c = cls:match("^backgroundTitre_(.+)$")
+    if c and titre_bg[c] then set_bg(el, titre_bg[c]); return end
+    c = cls:match("^backgroundStandard_(.+)$")
+    if c and standard_bg[c] then set_bg(el, standard_bg[c]); return end
+    if cls == "backgroundStandard" then set_bg(el, "3_Template-INSEE-Clair_Page-blanche.svg"); return end
+  end
+end
+
 -- Fonction pour obtenir la couleur suivante dans la palette
 local function get_next_color()
   chapter_count = chapter_count + 1
@@ -75,7 +109,7 @@ end
 function Header(el)
   -- Ajouter le set up backgroundPagefinale
   if el.identifier == "pageDeFin" then
-    el.classes:insert("backgroundPageFinale")
+    set_bg(el, "6_Template-INSEE-Clair_Diapo-finale.svg")
     return el
   end
   -- Ignorer si le header doit etre skippe (unnumbered, etc.)
@@ -180,7 +214,10 @@ function Header(el)
       el.identifier = "section_" .. current_chapter .. "_" .. section_counts[chapter_count]
     end
   end
-  
+
+  -- attach the full-bleed background matching the slide's classes
+  apply_background(el)
+
   return el
 end
 
