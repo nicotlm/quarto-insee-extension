@@ -3,6 +3,9 @@ project:
   title: "Présentation quarto-Insee"
   render:
     - "index.qmd"
+  output-dir: _output
+  resources:
+    - "img/"
 
 format:
   insee-clair-revealjs: default
