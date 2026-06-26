@@ -48,22 +48,9 @@ Les feuilles de style en cascade (CSS) permettent la mise en forme du support. C
 
 ## :four: L'export en PDF
 
-Pour exporter le support en PDF, il faut suivre les instructions écrites dans les slides dédiées (fichier `05_exportPdf.qmd`). En plus de ces instructions, il faut aussi garder dans les titres des slides leurs identifiants techniques car il y a un repositionnement des éléments composant les slides qui est effectué pour l'export.
+Pour exporter le support en PDF, il faut suivre les instructions écrites dans les slides dédiées (fichier `05_exportPdf.qmd`).
 
-Ces identifiants sont :
-
-- pour les slides des titres principaux : `chapters_<numeroDuChapitre>`
-- pour les slides des sections : `section_<numeroDuChapitre>_<numeroDeLaSection>`
-
-En voici des exemples :
-
-```md
-# titre de niveau 1 {#chapters_0 .backgroundTitre_bleu}
-
-## Titre de niveau 2 {#section_0_1 .backgroundStandard}
-```
-
-Il y a donc du CSS dédié au support quand on passe en PDF export Mode (quand on tape e sur le clavier). Celui-ci est réparti dans plusieurs feuilles de style et débute à chaque fois par les classes `.pdf-page` ou `.print-pdf`. Il y a également du css spécifique quand on lance l'impression du support en PDF. Celui-ci se situe dans le scope suivant :
+Il y a du CSS dédié au support quand on passe en PDF export Mode (quand on tape e sur le clavier). Celui-ci est réparti dans plusieurs feuilles de style et débute à chaque fois par les classes `.pdf-page` ou `.print-pdf`. Il y a également du css spécifique quand on lance l'impression du support en PDF. Celui-ci se situe dans le scope suivant :
 
 ```css
 @media print{
