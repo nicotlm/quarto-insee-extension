@@ -13,6 +13,11 @@ contributes:
       view-distance: 100 # keep all slides rendered → counter sees them all when rendering title slides
       mobile-view-distance: 100
 
+      title-slide-attributes:
+        data-background-image: _extensions/inseefrlab/insee-clair/ressources/revealJs/1_Template-INSEE-Clair_premiere-page.svg
+        data-background-size: contain
+        data-background-opacity: "1"
+      
       # Enable the bundled reveal plugins from the format itself, so they
       # travel with `quarto add` AND `quarto use template` (was in _quarto.yml,
       # which is .quartoignored and never reaches the installed template).

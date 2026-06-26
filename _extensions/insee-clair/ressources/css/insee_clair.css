@@ -1,3 +1,11 @@
+ /* Page intro */
+#title-slide {
+  background-image: url(../revealJs/1_Template-INSEE-Clair_premiere-page.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /*Sommaire*/
 
 #TOC {

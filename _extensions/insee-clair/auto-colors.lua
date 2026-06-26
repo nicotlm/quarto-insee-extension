@@ -73,8 +73,9 @@ end
 
 -- Traitement des headers
 function Header(el)
-  -- Ignorer si pageDeFin 
+  -- Ajouter le set up backgroundPagefinale
   if el.identifier == "pageDeFin" then
+    el.classes:insert("backgroundPageFinale")
     return el
   end
   -- Ignorer si le header doit etre skippe (unnumbered, etc.)
