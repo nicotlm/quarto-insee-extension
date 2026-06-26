@@ -50,7 +50,7 @@ format:
 
 Pour générer le fichier au format ODT à partir de votre fichier quarto QMD, il vous faudra procéder de la même manière qu'avec le format revealJs, à savoir cliquer sur la flèche à côté du *"render"* et sélectionner **"insee-clair-odt"**. Une fois le format sélectionné durant votre session RStudio, vous pourrez les fois suivantes cliquer sur *"render"* directement.
 
-![](_extensions/insee-clair/ressources/divers/renders_quarto.png){width=100%}
+![](img/renders_quarto.png){width=100%}
 
 <br/>
 

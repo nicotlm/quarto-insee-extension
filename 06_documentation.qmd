@@ -53,7 +53,7 @@ documentation
 ## Sous-titre 3ème partie {.backgroundStandard}
 
 :::{.logoTopLeftStandard}
-![](_extensions/insee-clair/ressources/img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
+![](img/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
 :::
 
 :::{.enteteAvecTitreSur2lignes}
