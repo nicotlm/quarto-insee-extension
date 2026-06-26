@@ -73,6 +73,10 @@ end
 
 -- Traitement des headers
 function Header(el)
+  -- Ignorer si pageDeFin 
+  if el.identifier == "pageDeFin" then
+    return el
+  end
   -- Ignorer si le header doit etre skippe (unnumbered, etc.)
   if should_skip_header(el.classes) then
     return el

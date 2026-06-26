@@ -106,7 +106,7 @@ Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher qu
 {{< include 06_documentation.qmd >}}
 
 
-## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
+## {#pageDeFin data-menu-title="Page finale" .unnumbered}
 
 :::: {.columns .coordonneesFinales}
 
