@@ -6,7 +6,7 @@
 
 Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant désormais {+la charte graphique de l'Insee 2025.+}
 
-> Les dépendances dont a besoin ce template pour fonctionner correctement en local sont listées dans le fichier `dev.R`.
+> Les dépendances dont a besoin ce template pour fonctionner correctement en local sont listées dans le fichier `renv.lock`.
 
 {+Important :+} Si vous utilisez ce support **dans l'environnement LS3**, une image configurée et contenant l'ensemble des dépendances nécessaires au support est disponible [ici](https://onyxia.datascience.kube.insee.fr/launcher/ide/rstudio?name=presentation-quarto&version=0.2.0&rstudio.service.image.custom.enabled=true&rstudio.service.image.custom.version=%C2%ABgitlab-registry.insee.fr%2Fdatascience%2Fregistry-prod-custom%2Fonyxia-rstudio-presentations-quarto%3A0.0.1%C2%BB&rstudio.kubernetes.role=%C2%ABadmin%C2%BB&rstudio.init.personalInit=%C2%ABhttps%3A%2F%2Fgitlab.insee.fr%2Fe9lc05%2Fmonrstudio%2F-%2Fraw%2Fmaster%2Finit_rstudio.sh%3Fref_type%3Dheads%C2%BB&autoLaunch=true). Cette image vous évite de devoir faire tourner le script dev.R au préalable.
 
@@ -16,11 +16,11 @@ Il n'y a plus de thème selon le public auquel on s'adresse. En effet, il n'y a 
 
 Par défaut, la présentation est "branchée" sur la charte graphique du thème clair (Insee-clair). Un thème sombre verra peut être le jour ultérieurement.
 
-:arrow_right: Les images des licences, des logos de chaque région et de chaque SSM, et les pictogrammes Insee sont disponibles dans le dossier `img/`.
+:arrow_right: Les images des licences, des logos de chaque région et de chaque SSM, et les pictogrammes Insee sont disponibles dans le dossier `_extensions/inseefrlab/insee-clair/ressources/img/` de l'extension.
 
 Pour changer de format, vous devez sélectionner le render associé au thème de la charte graphique de l'Insee que vous souhaitez utiliser, comme le montre l'image suivante :
 
-![](_extensions/insee-clair/ressources/divers/renders_quarto.png)
+![](img/renders_quarto.png)
 
 > Si ces options ne sont pas disponibles et que le render ne produit qu'un fichier texte, sans style, alors il vous faudra monter de version votre RStudio. L'intégration de quarto dans RStudio se fait à partir de la version `v2022.07` de RStudio. De plus, il est {-fortement recommandé-} d'utiliser a minima la version `v2023.06` de Rstudio pour faire du quarto.
 
