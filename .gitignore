@@ -16,3 +16,5 @@
 _output/
 
 **/*.quarto_ipynb
+_freeze/
+index_cache/
