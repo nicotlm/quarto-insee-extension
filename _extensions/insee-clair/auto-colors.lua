@@ -10,7 +10,7 @@ local color_palette = default_palette
 -- Backgrounds set via reveal's native data-background-image (full-bleed, reliable),
 -- exactly like the original slide-background.lua. Path hardcoded to inseefrlab to
 -- match title-slide-attributes and the footer logos.
-local bg_base = "_extensions/inseefrlab/insee-clair/ressources/revealJs/"
+local bg_base = "_extensions/insee-clair/ressources/revealJs/"
 local titre_bg = {
   bleu   = "2_Template-INSEE-Clair_Intercalaire1.svg",
   violet = "2_Template-INSEE-Clair_Intercalaire2.svg",
