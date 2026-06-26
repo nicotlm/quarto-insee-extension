@@ -1,7 +1,7 @@
 /*Sommaire*/
 
 #TOC {
-  text-align: left; /* "Sommaire" heading top-left, like the target */
+  text-align: left; 
 }
 
 #TOC ul {
@@ -30,11 +30,11 @@
   display: none;
 }
 
-/* the whole card is the clickable link; top padding reserves the flag+number row */
+/* carte cliquable avec numéro en haut */
 #TOC li a {
   display: block;
-  position: relative; /* anchor for the flag + number */
-  padding: 115px 0.5rem 1rem 0; /* TUNE: top value = height of the number row */
+  position: relative; /* fixer l'image et le numéro  */
+  padding: 115px 0.5rem 1rem 0; 
   text-decoration: none;
   color: #1a1a1a;
   font-weight: 700;
@@ -43,7 +43,7 @@
   text-align: left;
 }
 
-/* the flag graphic, top-left */
+/* l'image de la carte, haut à gauche*/
 #TOC li a::before {
   content: "";
   position: absolute;
@@ -55,7 +55,7 @@
   background-repeat: no-repeat;
 }
 
-/* the big zero-padded number, just right of the flag */
+/* le numéro paddé avec 0, à côté image */
 #TOC li a::after {
   content: counter(toc, decimal-leading-zero); /* → 01, 02, 03 … */
   position: absolute;
@@ -119,16 +119,16 @@
   }
 }
 
-/*pages Titre background images set in auto-colors.lua filter*/
+/*pages Titre background images fixé dans le filtre LUAauto-colors.lua*/
 
-/*pages standard background images set in auto-colors.lua filter*/
+/*pages standard background images fixé dans le filtre LUAauto-colors.lua*/
 .reveal .slide-background-content {
   background-image: url(../revealJs/3_Template-INSEE-Clair_Page-blanche.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-/* Footer characteristics and only for the first slide */
+/* Footer - seulement première slide */
 .reveal .footer .footer-logo {
   height: 35px;
   margin: 0 5px;
@@ -136,7 +136,7 @@
   display: inline-block;
 }
 
-/* footer visible only on the title and pagedeFin slides */
+/* footer visible seulement première slide et pagedeFin*/
 .reveal .footer {
   visibility: hidden;
 }
@@ -148,7 +148,7 @@
   visibility: visible;
 }
 
-/* logo visible only on the title and pagedeFin slides */
+/* logo visible seulement première slide et pagedeFin*/
 .reveal .slide-logo {
   visibility: hidden;
 }
@@ -160,14 +160,14 @@
   visibility: visible;
 }
 
-/* size of insee.fr */
+/* taille de insee.fr */
 .reveal .footer .footer-logo-inseefr {
   height: 18px;
 }
 
-/*pagesdefin background images set in auto-colors.lua filter*/
+/*pagesdefin background images fixés dans le filtre LUAauto-colors.lua*/
 
-/* Export to pdf : don't show footer - never */
+/* Export to pdf : cacher le footer*/
 html.print-pdf .reveal .footer {
   display: none !important;
 }

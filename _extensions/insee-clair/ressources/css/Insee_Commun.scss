@@ -267,8 +267,8 @@ section.backgroundTitre_vert h1 {
     align-items: flex-start;
     text-align: left;
   }
-  /* Hide Quarto's plain "1"; the visible number is drawn by ::before below.
-     font-size:0 collapses the span's em offsets, so the nudges live on ::before. */
+  /* Cacher le numéro donné par Quarto (1) avec font-size:0, 
+   le numéro paddé étant inséré ::before. */
   .header-section-number {
     font-size: 0;
     position: relative;
